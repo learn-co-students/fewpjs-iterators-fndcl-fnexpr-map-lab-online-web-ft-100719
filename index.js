@@ -16,8 +16,7 @@ function capitalize(string) {
 }
 
 const titleCased = () => {
-  const stringArray = tutorials.map(tutorial => {
+  return tutorials.map(tutorial => {
     return tutorial.split(' ').map(word => capitalize(word)).join(' ')
   })
-  return stringArray
 }
